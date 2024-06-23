@@ -18,7 +18,7 @@ try {
 //        'text'    => 'Your utf8 text 😜 ...',
 //    ]);
     // Set webhook
-    $result = $telegram->setWebhook($hook_url);
+   // $result = $telegram->setWebhook($hook_url);
 //    if ($result->isOk()) {
 //        echo $result->getDescription();
 //    }
