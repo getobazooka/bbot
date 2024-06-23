@@ -30,3 +30,5 @@ try {
     // log telegram errors
     // echo $e->getMessage();
 }
+
+echo 'hello world';
