@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>This is a PHP Page</title>
-</head>
-<body>
-  <h1>Hello, World!</h1>
-
-
   <?php
 // Load composer
 use Longman\TelegramBot\Request;
@@ -16,6 +7,7 @@ require __DIR__ . '/vendor/autoload.php';
 $bot_api_key  = '7305808870:AAGs2QzhNqsfrWyjdXfP4Wep5EZPd73HulY';
 $bot_username = 'testakarbot';
 $hook_url     = 'https://stackme.online/test/bbot.php';
+$hook_url     = 'https://my-appakar.adaptable.app/';
 
 try {
     // Create Telegram API object
@@ -26,7 +18,7 @@ try {
 //        'text'    => 'Your utf8 text 😜 ...',
 //    ]);
     // Set webhook
-//    $result = $telegram->setWebhook($hook_url);
+    $result = $telegram->setWebhook($hook_url);
 //    if ($result->isOk()) {
 //        echo $result->getDescription();
 //    }
@@ -42,6 +34,3 @@ try {
 
 echo 'hello world';
   ?>
-
-</body>
-</html>
